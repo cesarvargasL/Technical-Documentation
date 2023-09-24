@@ -1,0 +1,58 @@
+html body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    
+}
+
+#navbar {
+    background-color: #f4f4f4;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+}
+
+#navbar header {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#navbar .nav-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#main-doc {
+    margin-left: 250px;
+    padding: 20px;
+    width: 70%;
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+
+.main-section header {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        position: static;
+        width: 100%;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        width: 100%;
+    }
+}
